@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RS Accessories - Premium Window Film & PPF Solutions</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="text-white">
+
+  <!-- Navigation Bar -->
+  <header id="navbar" class="bg-black/80 backdrop-blur border-b border-slate-800 fixed w-full z-50 transition-shadow duration-300">
+    <nav class="max-w-7xl mx-auto px-6">
+      <div class="flex items-center justify-between h-16">
+
+        <!-- Logo -->
+        <a href="#" class="flex items-center h-full py-2">
+          <img src="assets/images/RS Film Logo.png" alt="RS Accessories" class="max-h-full w-auto object-contain" style="max-height: 40px;">
+        </a>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex items-center space-x-8 text-sm font-medium">
+          <li><a href="#" class="hover:text-red-500 transition-colors">Home</a></li>
+
+          <!-- Products Dropdown -->
+          <li class="relative" id="productsDropdown">
+            <button id="productsBtn" class="flex items-center gap-1 hover:text-red-500 transition-colors">
+              Products
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+
+            <!-- Dropdown -->
+            <div id="productsMenu" class="absolute left-0 top-8 hidden bg-black border border-slate-700 rounded-lg shadow-lg w-56 py-2 opacity-0 translate-y-2 transition-all duration-200">
+
+              <!-- Window Film -->
+              <div class="relative" id="windowFilmItem">
+                <div class="flex justify-between items-center px-4 py-3 hover:bg-slate-800 cursor-pointer transition-colors">
+                  <span>Window Film</span>
+                  <span>›</span>
+                </div>
+
+                <!-- Sub Dropdown -->
+                <div id="windowFilmMenu" class="absolute left-full top-0 hidden bg-black border border-slate-700 rounded-lg w-56 py-2 opacity-0 translate-x-2 transition-all duration-200">
+                  <a href="products-pro-series.html" class="block px-4 py-3 hover:bg-slate-800 transition-colors">Pro Series</a>
+
+                  <!-- Static Series -->
+                  <div class="relative" id="staticSeriesItem">
+                    <div class="flex justify-between items-center px-4 py-3 hover:bg-slate-800 cursor-pointer transition-colors">
+                      <span>Static Series</span>
+                      <span>›</span>
+                    </div>
+
+                    <div id="staticSeriesMenu" class="absolute left-full top-0 hidden bg-black border border-slate-700 rounded-lg w-56 py-2 opacity-0 translate-x-2 transition-all duration-200">
+                      <a href="products-global-series.html" class="block px-4 py-3 hover:bg-slate-800 transition-colors">Global Series</a>
+                      <a href="products-classic-series.html" class="block px-4 py-3 hover:bg-slate-800 transition-colors">Classic Series</a>
+                      <a href="products-uv-kool.html" class="block px-4 py-3 hover:bg-slate-800 transition-colors">UV Kool</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PPF -->
+              <a href="ppf.html" class="block px-4 py-3 hover:bg-slate-800 transition-colors">PPF</a>
+            </div>
+          </li>
+
+          <li><a href="about.html" class="hover:text-red-500 transition-colors">About</a></li>
+          <li><a href="contact.html" class="hover:text-red-500 transition-colors">Contact</a></li>
+        </ul>
+
+        <!-- CTA Button -->
+        <a href="#quote" class="hidden md:inline-block bg-red-600 px-5 py-2 rounded-full text-sm font-semibold hover:bg-red-700 transition-colors">
+          Get Quote
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button id="menuBtn" class="md:hidden text-2xl">
+          ☰
+        </button>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-black border-t border-slate-800 fixed w-full z-40 mt-16">
+    <a href="#" class="block px-6 py-4 border-b border-slate-800 hover:bg-slate-800 transition-colors">Home</a>
+    
+    <!-- Mobile Products Accordion -->
+    <div>
+      <button id="mobileProductsBtn" class="w-full text-left px-6 py-4 border-b border-slate-800 hover:bg-slate-800 transition-colors flex justify-between items-center">
+        <span>Products</span>
+        <span id="productsArrow">▾</span>
+      </button>
+      <div id="mobileProductsMenu" class="hidden bg-slate-900">
+        <a href="products-pro-series.html" class="block px-8 py-3 border-b border-slate-800 hover:bg-slate-800 transition-colors">Window Film - Pro Series</a>
+        <a href="products-global-series.html" class="block px-8 py-3 border-b border-slate-800 hover:bg-slate-800 transition-colors">Static - Global Series</a>
+        <a href="products-classic-series.html" class="block px-8 py-3 border-b border-slate-800 hover:bg-slate-800 transition-colors">Static - Classic Series</a>
+        <a href="products-uv-kool.html" class="block px-8 py-3 border-b border-slate-800 hover:bg-slate-800 transition-colors">Static - UV Kool</a>
+        <a href="ppf.html" class="block px-8 py-3 border-b border-slate-800 hover:bg-slate-800 transition-colors">PPF</a>
+      </div>
+    </div>
+    
+    <a href="about.html" class="block px-6 py-4 border-b border-slate-800 hover:bg-slate-800 transition-colors">About</a>
+    <a href="contact.html" class="block px-6 py-4 border-b border-slate-800 hover:bg-slate-800 transition-colors">Contact</a>
+    <a href="#quote" class="block px-6 py-4 bg-red-600 hover:bg-red-700 transition-colors font-semibold">Get Quote</a>
+  </div>
+
+  <!-- Main Content (Add padding-top to account for fixed navbar) -->
+  <main class="pt-16">
+    
+    <!-- Video Section -->
+    <section class="w-full bg-black">
+      <div class="max-w-7xl mx-auto">
+        <video class="w-full h-auto" autoplay muted loop playsinline>
+          <source src="assets/video/Video_Generation_With_Specific_Constraints.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen bg-gradient-to-br from-slate-900 to-black flex items-center justify-center px-6">
+      <div class="text-center max-w-4xl">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6">
+          Premium <span class="text-red-600">Window Film</span> & PPF Solutions
+        </h1>
+        <p class="text-xl text-slate-400 mb-8">
+          Professional-grade protection with unmatched clarity and durability
+        </p>
+        <a href="#quote" class="inline-block bg-red-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-red-700 hover:scale-105 transition-all duration-200">
+          Request a Quote
+        </a>
+      </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section id="quote" class="relative py-24 bg-gradient-to-b from-slate-900 to-black">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+        <!-- LEFT CONTENT -->
+        <div class="reveal">
+          <h2 class="text-4xl font-bold text-white">
+            Get Your <span class="text-red-600">Free Quote</span>
+          </h2>
+
+          <p class="mt-4 text-slate-400 max-w-md">
+            Tell us what you need and our team will get back to you with the best
+            solution tailored for your vehicle.
+          </p>
+
+          <ul class="mt-6 space-y-3 text-slate-300">
+            <li>✔ Professional Installation</li>
+            <li>✔ Premium Window Films & PPF</li>
+            <li>✔ 36 Months Warranty</li>
+            <li>✔ Quick Response</li>
+          </ul>
+
+          <div class="mt-8">
+            <p class="text-slate-400 text-sm">Prefer calling?</p>
+            <a href="tel:+918149111110"
+               class="text-red-500 font-semibold hover:underline">
+              +91 81491 11110
+            </a>
+          </div>
+        </div>
+
+        <!-- RIGHT FORM -->
+        <div class="reveal bg-white/5 backdrop-blur-md border border-slate-800 rounded-2xl p-8 shadow-xl
+                    transform transition-all duration-700 hover:scale-[1.01]">
+
+          <form id="quoteForm" class="space-y-5">
+
+            <input id="quoteName" type="text" placeholder="Full Name" required
+              class="w-full bg-black border border-slate-700 rounded-lg px-4 py-3
+                     text-white focus:border-red-500 focus:outline-none transition-colors">
+
+            <input id="quotePhone" type="tel" placeholder="Phone Number" required
+              class="w-full bg-black border border-slate-700 rounded-lg px-4 py-3
+                     text-white focus:border-red-500 focus:outline-none transition-colors">
+
+            <input id="quoteEmail" type="email" placeholder="Email (optional)"
+              class="w-full bg-black border border-slate-700 rounded-lg px-4 py-3
+                     text-white focus:border-red-500 focus:outline-none transition-colors">
+
+            <select id="quoteProduct" required
+              class="w-full bg-black border border-slate-700 rounded-lg px-4 py-3
+                     text-white focus:border-red-500 focus:outline-none transition-colors">
+              <option value="">Select Product</option>
+              <option>Pro Series</option>
+              <option>Global Series</option>
+              <option>Classic Series</option>
+              <option>UV Kool</option>
+              <option>PPF</option>
+            </select>
+
+            <button type="submit" id="quoteBtn"
+              class="w-full bg-red-600 hover:bg-red-700 text-white font-semibold
+                     py-3 rounded-lg transition-transform hover:scale-105">
+              Get Free Quote
+            </button>
+
+            <p class="text-xs text-slate-400 text-center">
+              We respect your privacy. No spam.
+            </p>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-black border-t border-slate-800 py-12">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        
+        <!-- Contact Info -->
+        <div>
+          <h3 class="text-white font-semibold mb-4">Contact Us</h3>
+          <p class="text-slate-400 text-sm mb-2">
+            Phone: <a href="tel:+918149111110" class="text-red-500 hover:underline">+91 81491 11110</a>
+          </p>
+          <p class="text-slate-400 text-sm">
+            Professional window film & PPF solutions
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-white font-semibold mb-4">Quick Links</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="text-slate-400 hover:text-red-500 transition-colors">Home</a></li>
+            <li><a href="products-pro-series.html" class="text-slate-400 hover:text-red-500 transition-colors">Products</a></li>
+            <li><a href="about.html" class="text-slate-400 hover:text-red-500 transition-colors">About</a></li>
+            <li><a href="contact.html" class="text-slate-400 hover:text-red-500 transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Products -->
+        <div>
+          <h3 class="text-white font-semibold mb-4">Our Products</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="products-pro-series.html" class="text-slate-400 hover:text-red-500 transition-colors">Pro Series</a></li>
+            <li><a href="products-global-series.html" class="text-slate-400 hover:text-red-500 transition-colors">Global Series</a></li>
+            <li><a href="products-classic-series.html" class="text-slate-400 hover:text-red-500 transition-colors">Classic Series</a></li>
+            <li><a href="products-uv-kool.html" class="text-slate-400 hover:text-red-500 transition-colors">UV Kool</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="border-t border-slate-800 pt-8 text-center text-slate-400 text-sm">
+        <p>&copy; 2025 RS Accessories. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+  
+  <!-- WhatsApp Quote Form Handler -->
+  <script>
+    document.getElementById("quoteForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const name = document.getElementById("quoteName").value.trim();
+      const phone = document.getElementById("quotePhone").value.trim();
+      const email = document.getElementById("quoteEmail").value.trim();
+      const product = document.getElementById("quoteProduct").value;
+      const btn = document.getElementById("quoteBtn");
+
+      if (!name || !phone || !product) {
+        alert("Please fill all required fields");
+        return;
+      }
+
+      // Disable button and show loading state
+      btn.innerText = "Opening WhatsApp...";
+      btn.disabled = true;
+
+      const message = `
+New Quote Request 🚗✨
+
+Name: ${name}
+Phone: ${phone}
+Email: ${email || "Not provided"}
+Product: ${product}
+      `.trim();
+
+      const whatsappNumber = "918149111110";
+      const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+      window.open(whatsappURL, "_blank");
+
+      // Reset button after 2 seconds
+      setTimeout(() => {
+        btn.innerText = "Get Free Quote";
+        btn.disabled = false;
+        // Optionally reset form
+        // document.getElementById("quoteForm").reset();
+      }, 2000);
+    });
+
+    // Auto-select product if coming from product page
+    window.addEventListener("DOMContentLoaded", function() {
+      const savedProduct = localStorage.getItem("selectedProduct");
+      if (savedProduct) {
+        document.getElementById("quoteProduct").value = savedProduct;
+        localStorage.removeItem("selectedProduct"); // Clear after use
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Get Your Free Quote | RS Accessories</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-black text-white">
+
+  <!-- Navigation Bar -->
+  <header id="navbar" class="bg-black/80 backdrop-blur border-b border-slate-800 fixed w-full z-50 transition-shadow duration-300">
+    <nav class="max-w-7xl mx-auto px-6">
+      <div class="flex items-center justify-between h-16">
+
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center h-full py-2">
+          <img src="assets/images/RS Film Logo.png" alt="RS Accessories" class="max-h-full w-auto object-contain" style="max-height: 40px;">
+        </a>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex items-center space-x-8 text-sm font-medium">
+          <li><a href="index.html" class="hover:text-red-500 transition-colors">Home</a></li>
+
+          <!-- Products Dropdown -->
+          <li class="relative" id="productsDropdown">
+            <button id="productsBtn" class="flex items-center gap-1 hover:text-red-500 transition-colors">
+              Products
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+
+            <!-- Dropdown -->
+            <div id="productsMenu" class="absolute left-0 top-8 hidden bg-black border border-slate-700 rounded-lg shadow-lg w-56 py-2 opacity-0 translate-y-2 transition-all duration-200">
+
+              <!-- Window Film -->
+              <div class="relative" id="windowFilmItem">
+                <div class="flex justify-between items-center px-4 py-3 hover:bg-slate-800 cursor-pointer transition-colors">
+                  <span>Window Film</span>
+                  <span>›</span>
+                </div>
+
+                <!-- Sub Dropdown -->
+                <div id="windowFilmMenu" class="absolute left-full top-0 hidden bg-black border border-slate-700 rounded-lg w-56 py-2 opacity-0 translate-x-2 transition-all duration-200">
+                  <a href="products-pro-series.html" class="block px-4 py-3 hover:bg-slate-800 transition-colors">Pro Series</a>
+
+                  <!-- Static Series -->
+                  <div class="relative" id="staticSeriesItem">
+                    <div class="flex justify-between items-center px-4 py-3 hover:bg-slate-800 cursor-pointer transition-colors">
+                      <span>Static Series</span>
+                      <span>›</span>
+                    </div>
+
+                    <div id="staticSeriesMenu" class="absolute left-full top-0 hidden bg-black border border-slate-700 rounded-lg w-56 py-2 opacity-0 translate-x-2 transition-all duration-200">
+                      <a href="products-global-series.html" class="block px-4 py-3 hover:bg-slate-800 transition-colors">Global Series</a>
+                      <a href="products-classic-series.html" class="block px-4 py-3 hover:bg-slate-800 transition-colors">Classic Series</a>
+                      <a href="products-uv-kool.html" class="block px-4 py-3 hover:bg-slate-800 transition-colors">UV Kool</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PPF -->
+              <a href="ppf.html" class="block px-4 py-3 hover:bg-slate-800 transition-colors">PPF</a>
+            </div>
+          </li>
+
+          <li><a href="about.html" class="hover:text-red-500 transition-colors">About</a></li>
+          <li><a href="contact.html" class="text-red-500 transition-colors">Contact</a></li>
+        </ul>
+
+        <!-- CTA Button -->
+        <a href="index.html#quote" class="hidden md:inline-block bg-red-600 px-5 py-2 rounded-full text-sm font-semibold hover:bg-red-700 transition-colors">
+          Get Quote
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button id="menuBtn" class="md:hidden text-2xl">
+          ☰
+        </button>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-black border-t border-slate-800 fixed w-full z-40 mt-16">
+    <a href="index.html" class="block px-6 py-4 border-b border-slate-800 hover:bg-slate-800 transition-colors">Home</a>
+    
+    <!-- Mobile Products Accordion -->
+    <div>
+      <button id="mobileProductsBtn" class="w-full text-left px-6 py-4 border-b border-slate-800 hover:bg-slate-800 transition-colors flex justify-between items-center">
+        <span>Products</span>
+        <span id="productsArrow">▾</span>
+      </button>
+      <div id="mobileProductsMenu" class="hidden bg-slate-900">
+        <a href="products-pro-series.html" class="block px-8 py-3 border-b border-slate-800 hover:bg-slate-800 transition-colors">Window Film - Pro Series</a>
+        <a href="products-global-series.html" class="block px-8 py-3 border-b border-slate-800 hover:bg-slate-800 transition-colors">Static - Global Series</a>
+        <a href="products-classic-series.html" class="block px-8 py-3 border-b border-slate-800 hover:bg-slate-800 transition-colors">Static - Classic Series</a>
+        <a href="products-uv-kool.html" class="block px-8 py-3 border-b border-slate-800 hover:bg-slate-800 transition-colors">Static - UV Kool</a>
+        <a href="ppf.html" class="block px-8 py-3 border-b border-slate-800 hover:bg-slate-800 transition-colors">PPF</a>
+      </div>
+    </div>
+    
+    <a href="about.html" class="block px-6 py-4 border-b border-slate-800 hover:bg-slate-800 transition-colors">About</a>
+    <a href="contact.html" class="block px-6 py-4 border-b border-slate-800 bg-slate-800 text-red-500 transition-colors">Contact</a>
+    <a href="index.html#quote" class="block px-6 py-4 bg-red-600 hover:bg-red-700 transition-colors font-semibold">Get Quote</a>
+  </div>
+
+  <!-- Main Content -->
+  <main class="pt-16">
+
+    <!-- Hero Section -->
+    <section class="relative py-28 bg-gradient-to-br from-black via-slate-900 to-black">
+      <div class="max-w-6xl mx-auto px-6 text-center reveal">
+        <h1 class="text-4xl md:text-5xl font-bold text-white">
+          Get in <span class="text-red-600">Touch</span>
+        </h1>
+
+        <p class="mt-4 text-slate-400 max-w-2xl mx-auto">
+          Have questions or need a quote?  
+          Reach out to us — we're here to help.
+        </p>
+      </div>
+    </section>
+
+    <!-- Quick Contact Options -->
+    <section class="py-16 bg-black">
+      <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <!-- Call -->
+        <a href="tel:+918149111110" class="reveal bg-slate-950 border border-slate-800 rounded-xl p-8 text-center hover:border-red-600 hover:-translate-y-1 transition-all duration-300">
+          <div class="text-4xl mb-4">📞</div>
+          <h3 class="text-lg font-semibold text-white">Call Us</h3>
+          <p class="text-red-500 mt-2 font-semibold">+91 81491 11110</p>
+          <p class="text-slate-400 text-sm mt-1">Mon - Sat, 10 AM - 7 PM</p>
+        </a>
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/918149111110" target="_blank" class="reveal bg-slate-950 border border-slate-800 rounded-xl p-8 text-center hover:border-red-600 hover:-translate-y-1 transition-all duration-300">
+          <div class="text-4xl mb-4">💬</div>
+          <h3 class="text-lg font-semibold text-white">WhatsApp</h3>
+          <p class="text-slate-400 mt-2">Chat with us instantly</p>
+          <p class="text-red-500 text-sm mt-1 font-semibold">Quick Response</p>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="py-20 bg-slate-950">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+        <!-- LEFT INFO -->
+        <div class="reveal">
+          <h2 class="text-3xl font-bold text-white">Send Us a Message</h2>
+          <p class="mt-4 text-slate-400">
+            Fill out the form and our team will get back to you shortly.
+          </p>
+
+          <ul class="mt-6 space-y-3 text-slate-300">
+            <li class="flex items-center gap-3">
+              <span class="text-red-600 text-xl">✔</span>
+              <span>Quick response</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="text-red-600 text-xl">✔</span>
+              <span>Professional support</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="text-red-600 text-xl">✔</span>
+              <span>Free consultation</span>
+            </li>
+          </ul>
+
+          <div class="mt-8 p-6 bg-black border border-slate-800 rounded-xl">
+            <h3 class="text-white font-semibold mb-3">Business Hours</h3>
+            <p class="text-slate-400 text-sm">Monday - Saturday</p>
+            <p class="text-red-500 font-semibold">10:00 AM - 7:00 PM</p>
+            <p class="text-slate-400 text-sm mt-2">Sunday: Closed</p>
+          </div>
+        </div>
+
+        <!-- FORM -->
+        <div class="reveal bg-black border border-slate-800 rounded-2xl p-8">
+          <form class="space-y-5" id="contactForm">
+
+            <input type="text" name="name" placeholder="Your Name" required
+              class="w-full bg-black border border-slate-700 rounded-lg px-4 py-3 text-white focus:border-red-600 focus:outline-none transition-colors">
+
+            <input type="tel" name="phone" placeholder="Phone Number" required
+              class="w-full bg-black border border-slate-700 rounded-lg px-4 py-3 text-white focus:border-red-600 focus:outline-none transition-colors">
+
+            <input type="email" name="email" placeholder="Email Address" required
+              class="w-full bg-black border border-slate-700 rounded-lg px-4 py-3 text-white focus:border-red-600 focus:outline-none transition-colors">
+
+            <select name="service" required
+              class="w-full bg-black border border-slate-700 rounded-lg px-4 py-3 text-white focus:border-red-600 focus:outline-none transition-colors">
+              <option value="">Select Service</option>
+              <option>Pro Series</option>
+              <option>Global Series</option>
+              <option>Classic Series</option>
+              <option>UV Kool</option>
+              <option>PPF</option>
+              <option>General Inquiry</option>
+            </select>
+
+            <textarea name="message" rows="4" placeholder="Your Message" required
+              class="w-full bg-black border border-slate-700 rounded-lg px-4 py-3 text-white focus:border-red-600 focus:outline-none transition-colors resize-none"></textarea>
+
+            <button type="submit"
+              class="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-3 rounded-lg transition-transform hover:scale-105">
+              Send Message
+            </button>
+
+            <p class="text-xs text-slate-400 text-center">
+              We respect your privacy. Your information is secure.
+            </p>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Business Information -->
+    <section class="py-16 bg-black text-center">
+      <div class="max-w-4xl mx-auto px-6 reveal">
+        <div class="text-5xl mb-6">📍</div>
+        <h2 class="text-3xl font-bold text-white">Visit Our Location</h2>
+
+        <div class="mt-8 inline-block text-left bg-slate-950 border border-slate-800 rounded-xl p-8">
+          <h3 class="text-white font-semibold mb-4">RS Accessories</h3>
+          <p class="text-slate-400">
+            Premium Window Films & PPF Solutions<br>
+            Nagpur, Maharashtra, India
+          </p>
+
+          <div class="mt-4 pt-4 border-t border-slate-800">
+            <p class="text-slate-400 text-sm">
+              <span class="text-white font-semibold">Working Hours:</span><br>
+              Mon – Sat | 10:00 AM – 7:00 PM<br>
+              Sunday | Closed
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-20 bg-gradient-to-r from-red-600 to-red-700 text-center">
+      <div class="max-w-4xl mx-auto px-6 reveal">
+        <h2 class="text-3xl md:text-4xl font-bold text-white">
+          Let's Get Started Today
+        </h2>
+
+        <p class="mt-4 text-red-100 max-w-xl mx-auto">
+          Ready to protect and enhance your vehicle with premium window films?
+        </p>
+
+        <a href="index.html#quote"
+           class="inline-block mt-6 bg-black px-10 py-4 rounded-full font-semibold text-white hover:bg-slate-900 hover:scale-105 transition-all duration-200">
+          Request a Quote
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-slate-800 py-12">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          
+          <!-- Contact Info -->
+          <div>
+            <h3 class="text-white font-semibold mb-4">Contact Us</h3>
+            <p class="text-slate-400 text-sm mb-2">
+              Phone: <a href="tel:+918149111110" class="text-red-500 hover:underline">+91 81491 11110</a>
+            </p>
+            <p class="text-slate-400 text-sm mb-2">
+              Email: <a href="mailto:info@rsaccessories.com" class="text-red-500 hover:underline">info@rsaccessories.in</a>
+            </p>
+            <p class="text-slate-400 text-sm">
+              Nagpur, Maharashtra, India
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h3 class="text-white font-semibold mb-4">Quick Links</h3>
+            <ul class="space-y-2 text-sm">
+              <li><a href="index.html" class="text-slate-400 hover:text-red-500 transition-colors">Home</a></li>
+              <li><a href="products-pro-series.html" class="text-slate-400 hover:text-red-500 transition-colors">Products</a></li>
+              <li><a href="about.html" class="text-slate-400 hover:text-red-500 transition-colors">About</a></li>
+              <li><a href="contact.html" class="text-slate-400 hover:text-red-500 transition-colors">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Products -->
+          <div>
+            <h3 class="text-white font-semibold mb-4">Our Products</h3>
+            <ul class="space-y-2 text-sm">
+              <li><a href="products-pro-series.html" class="text-slate-400 hover:text-red-500 transition-colors">Pro Series</a></li>
+              <li><a href="products-global-series.html" class="text-slate-400 hover:text-red-500 transition-colors">Global Series</a></li>
+              <li><a href="products-classic-series.html" class="text-slate-400 hover:text-red-500 transition-colors">Classic Series</a></li>
+              <li><a href="products-uv-kool.html" class="text-slate-400 hover:text-red-500 transition-colors">UV Kool</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="border-t border-slate-800 pt-8 text-center text-slate-400 text-sm">
+          <p>&copy; 2025 RS Accessories. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/918149111110" target="_blank" 
+     class="fixed bottom-6 right-6 bg-green-500 text-white rounded-full p-4 shadow-lg hover:bg-green-600 hover:scale-110 transition-all duration-300 z-50">
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>

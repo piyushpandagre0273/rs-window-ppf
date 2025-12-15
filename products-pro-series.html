@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pro Series - Premium Heat Control Window Films | RS Accessories</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="text-white bg-black">
+
+  <!-- Navigation Bar -->
+  <header id="navbar" class="bg-black/80 backdrop-blur border-b border-slate-800 fixed w-full z-50 transition-shadow duration-300">
+    <nav class="max-w-7xl mx-auto px-6">
+      <div class="flex items-center justify-between h-16">
+
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center h-full py-2">
+          <img src="assets/images/RS Film Logo.png" alt="RS Accessories" class="max-h-full w-auto object-contain" style="max-height: 40px;">
+        </a>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex items-center space-x-8 text-sm font-medium">
+          <li><a href="index.html" class="hover:text-red-500 transition-colors">Home</a></li>
+
+          <!-- Products Dropdown -->
+          <li class="relative" id="productsDropdown">
+            <button id="productsBtn" class="flex items-center gap-1 hover:text-red-500 transition-colors">
+              Products
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+
+            <!-- Dropdown -->
+            <div id="productsMenu" class="absolute left-0 top-8 hidden bg-black border border-slate-700 rounded-lg shadow-lg w-56 py-2 opacity-0 translate-y-2 transition-all duration-200">
+
+              <!-- Window Film -->
+              <div class="relative" id="windowFilmItem">
+                <div class="flex justify-between items-center px-4 py-3 hover:bg-slate-800 cursor-pointer transition-colors">
+                  <span>Window Film</span>
+                  <span>›</span>
+                </div>
+
+                <!-- Sub Dropdown -->
+                <div id="windowFilmMenu" class="absolute left-full top-0 hidden bg-black border border-slate-700 rounded-lg w-56 py-2 opacity-0 translate-x-2 transition-all duration-200">
+                  <a href="products-pro-series.html" class="block px-4 py-3 hover:bg-slate-800 transition-colors">Pro Series</a>
+
+                  <!-- Static Series -->
+                  <div class="relative" id="staticSeriesItem">
+                    <div class="flex justify-between items-center px-4 py-3 hover:bg-slate-800 cursor-pointer transition-colors">
+                      <span>Static Series</span>
+                      <span>›</span>
+                    </div>
+
+                    <div id="staticSeriesMenu" class="absolute left-full top-0 hidden bg-black border border-slate-700 rounded-lg w-56 py-2 opacity-0 translate-x-2 transition-all duration-200">
+                      <a href="products-global-series.html" class="block px-4 py-3 hover:bg-slate-800 transition-colors">Global Series</a>
+                      <a href="products-classic-series.html" class="block px-4 py-3 hover:bg-slate-800 transition-colors">Classic Series</a>
+                      <a href="products-uv-kool.html" class="block px-4 py-3 hover:bg-slate-800 transition-colors">UV Kool</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PPF -->
+              <a href="ppf.html" class="block px-4 py-3 hover:bg-slate-800 transition-colors">PPF</a>
+            </div>
+          </li>
+
+          <li><a href="about.html" class="hover:text-red-500 transition-colors">About</a></li>
+          <li><a href="contact.html" class="hover:text-red-500 transition-colors">Contact</a></li>
+        </ul>
+
+        <!-- CTA Button -->
+        <a href="#quote" class="hidden md:inline-block bg-red-600 px-5 py-2 rounded-full text-sm font-semibold hover:bg-red-700 transition-colors">
+          Get Quote
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button id="menuBtn" class="md:hidden text-2xl">
+          ☰
+        </button>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-black border-t border-slate-800 fixed w-full z-40 mt-16">
+    <a href="index.html" class="block px-6 py-4 border-b border-slate-800 hover:bg-slate-800 transition-colors">Home</a>
+    
+    <!-- Mobile Products Accordion -->
+    <div>
+      <button id="mobileProductsBtn" class="w-full text-left px-6 py-4 border-b border-slate-800 hover:bg-slate-800 transition-colors flex justify-between items-center">
+        <span>Products</span>
+        <span id="productsArrow">▾</span>
+      </button>
+      <div id="mobileProductsMenu" class="hidden bg-slate-900">
+        <a href="products-pro-series.html" class="block px-8 py-3 border-b border-slate-800 hover:bg-slate-800 transition-colors">Window Film - Pro Series</a>
+        <a href="products-global-series.html" class="block px-8 py-3 border-b border-slate-800 hover:bg-slate-800 transition-colors">Static - Global Series</a>
+        <a href="products-classic-series.html" class="block px-8 py-3 border-b border-slate-800 hover:bg-slate-800 transition-colors">Static - Classic Series</a>
+        <a href="products-uv-kool.html" class="block px-8 py-3 border-b border-slate-800 hover:bg-slate-800 transition-colors">Static - UV Kool</a>
+        <a href="ppf.html" class="block px-8 py-3 border-b border-slate-800 hover:bg-slate-800 transition-colors">PPF</a>
+      </div>
+    </div>
+    
+    <a href="about.html" class="block px-6 py-4 border-b border-slate-800 hover:bg-slate-800 transition-colors">About</a>
+    <a href="contact.html" class="block px-6 py-4 border-b border-slate-800 hover:bg-slate-800 transition-colors">Contact</a>
+    <a href="#quote" class="block px-6 py-4 bg-red-600 hover:bg-red-700 transition-colors font-semibold">Get Quote</a>
+  </div>
+
+  <!-- Main Content -->
+  <main class="pt-16">
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-black via-slate-900 to-black py-28">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-white animate-fadeInUp">
+          Pro Series <span class="text-red-600">Heat Control Window Films</span>
+        </h1>
+
+        <p class="mt-4 text-slate-400 max-w-2xl mx-auto text-lg animate-fadeInUp-delay-1">
+          Clarity outside. Coolness inside. Engineered for premium comfort,
+          superior heat rejection, and professional-grade performance.
+        </p>
+
+        <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4 animate-fadeInUp-delay-2">
+          <a href="#quote" class="bg-red-600 px-8 py-3 rounded-full font-semibold hover:bg-red-700 hover:scale-105 active:scale-95 hover:shadow-[0_0_20px_rgba(239,68,68,0.5)] transition-all duration-200">
+            Request a Quote
+          </a>
+          <a href="tel:+918149111110" class="border border-slate-600 px-8 py-3 rounded-full hover:bg-slate-800 hover:scale-105 active:scale-95 transition-all duration-200">
+            Call Now
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gradient Divider -->
+    <div class="h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
+
+    <!-- Why Pro Series -->
+    <section class="py-20 bg-black">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-white">Why Choose Pro Series?</h2>
+
+        <p class="mt-4 text-slate-400 max-w-3xl mx-auto">
+          Pro Series delivers premium performance using advanced window film
+          technology. Designed exclusively for professional installation, it
+          blocks intense heat, enhances visibility, and protects interiors
+          without affecting signal connectivity.
+        </p>
+      </div>
+    </section>
+
+    <!-- Key Benefits -->
+    <section class="py-16 bg-gradient-to-b from-black to-slate-950">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-2xl font-bold text-white text-center mb-10">Key Benefits</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+          <div class="reveal group p-6 bg-slate-950 rounded-xl border border-slate-800 hover:border-red-600 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+            <div class="text-red-500 text-3xl mb-3">✓</div>
+            <h3 class="font-semibold text-white text-lg">Clear Visibility</h3>
+            <p class="text-slate-400 text-sm mt-2">
+              Maintains crystal-clear view without distortion.
+            </p>
+          </div>
+
+          <div class="reveal group p-6 bg-slate-950 rounded-xl border border-slate-800 hover:border-red-600 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+            <div class="text-red-500 text-3xl mb-3">✓</div>
+            <h3 class="font-semibold text-white text-lg">Glare Reduction</h3>
+            <p class="text-slate-400 text-sm mt-2">
+              Reduces eye strain for safer and comfortable driving.
+            </p>
+          </div>
+
+          <div class="reveal group p-6 bg-slate-950 rounded-xl border border-slate-800 hover:border-red-600 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+            <div class="text-red-500 text-3xl mb-3">✓</div>
+            <h3 class="font-semibold text-white text-lg">99% UV Protection</h3>
+            <p class="text-slate-400 text-sm mt-2">
+              Protects passengers and interiors from harmful UV rays.
+            </p>
+          </div>
+
+          <div class="reveal group p-6 bg-slate-950 rounded-xl border border-slate-800 hover:border-red-600 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+            <div class="text-red-500 text-3xl mb-3">✓</div>
+            <h3 class="font-semibold text-white text-lg">Interior Protection</h3>
+            <p class="text-slate-400 text-sm mt-2">
+              Prevents fading of dashboard, seats, and trims.
+            </p>
+          </div>
+
+          <div class="reveal group p-6 bg-slate-950 rounded-xl border border-slate-800 hover:border-red-600 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+            <div class="text-red-500 text-3xl mb-3">✓</div>
+            <h3 class="font-semibold text-white text-lg">Extra Cooling</h3>
+            <p class="text-slate-400 text-sm mt-2">
+              Rejects heat to keep interiors cooler.
+            </p>
+          </div>
+
+          <div class="reveal group p-6 bg-slate-950 rounded-xl border border-slate-800 hover:border-red-600 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+            <div class="text-red-500 text-3xl mb-3">✓</div>
+            <h3 class="font-semibold text-white text-lg">Signal Friendly</h3>
+            <p class="text-slate-400 text-sm mt-2">
+              No interference with GPS, mobile, or Bluetooth signals.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Gradient Divider -->
+    <div class="h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
+
+    <!-- Pro Series Variants -->
+    <section class="py-20 bg-slate-950">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-white text-center mb-12">
+          Pro Series Variants
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <!-- RS 70 -->
+          <div class="reveal group bg-gradient-to-br from-slate-900 to-black border border-slate-800 rounded-xl p-6 hover:border-red-600 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+            <h3 class="text-2xl font-bold text-red-500 mb-6">RS 70</h3>
+            
+            <div class="space-y-3 text-sm">
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">VLT</span>
+                <span class="text-white font-semibold">70%</span>
+              </div>
+              <div class="h-px bg-slate-800"></div>
+              
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">UV Rejection</span>
+                <span class="text-white font-semibold">99%</span>
+              </div>
+              <div class="h-px bg-slate-800"></div>
+              
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">IR Rejection</span>
+                <span class="text-white font-semibold">47%</span>
+              </div>
+              <div class="h-px bg-slate-800"></div>
+              
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">Heat Rejection</span>
+                <span class="text-white font-semibold">40%</span>
+              </div>
+            </div>
+
+            <a href="#quote" class="inline-block mt-6 text-sm text-red-500 hover:text-red-400 transition-colors">
+              Get Quote →
+            </a>
+          </div>
+
+          <!-- RS 50 (Popular) -->
+          <div class="reveal group bg-gradient-to-br from-slate-900 to-black border border-red-600 rounded-xl p-6 hover:-translate-y-2 hover:shadow-xl hover:shadow-red-600/20 transition-all duration-300 relative">
+            <div class="absolute -top-3 left-6 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full">POPULAR</div>
+            <h3 class="text-2xl font-bold text-red-500 mb-6">RS 50</h3>
+            
+            <div class="space-y-3 text-sm">
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">VLT</span>
+                <span class="text-white font-semibold">50%</span>
+              </div>
+              <div class="h-px bg-slate-800"></div>
+              
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">UV Rejection</span>
+                <span class="text-white font-semibold">99%</span>
+              </div>
+              <div class="h-px bg-slate-800"></div>
+              
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">IR Rejection</span>
+                <span class="text-white font-semibold">88%</span>
+              </div>
+              <div class="h-px bg-slate-800"></div>
+              
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">Heat Rejection</span>
+                <span class="text-white font-semibold">59%</span>
+              </div>
+            </div>
+
+            <a href="#quote" class="inline-block mt-6 text-sm text-red-500 hover:text-red-400 transition-colors">
+              Get Quote →
+            </a>
+          </div>
+
+          <!-- RS 35 -->
+          <div class="reveal group bg-gradient-to-br from-slate-900 to-black border border-slate-800 rounded-xl p-6 hover:border-red-600 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+            <h3 class="text-2xl font-bold text-red-500 mb-6">RS 35</h3>
+            
+            <div class="space-y-3 text-sm">
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">VLT</span>
+                <span class="text-white font-semibold">35%</span>
+              </div>
+              <div class="h-px bg-slate-800"></div>
+              
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">UV Rejection</span>
+                <span class="text-white font-semibold">99%</span>
+              </div>
+              <div class="h-px bg-slate-800"></div>
+              
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">IR Rejection</span>
+                <span class="text-white font-semibold">82%</span>
+              </div>
+              <div class="h-px bg-slate-800"></div>
+              
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">Heat Rejection</span>
+                <span class="text-white font-semibold">72%</span>
+              </div>
+            </div>
+
+            <a href="#quote" class="inline-block mt-6 text-sm text-red-500 hover:text-red-400 transition-colors">
+              Get Quote →
+            </a>
+          </div>
+
+          <!-- RS 20 -->
+          <div class="reveal group bg-gradient-to-br from-slate-900 to-black border border-slate-800 rounded-xl p-6 hover:border-red-600 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+            <h3 class="text-2xl font-bold text-red-500 mb-6">RS 20</h3>
+            
+            <div class="space-y-3 text-sm">
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">VLT</span>
+                <span class="text-white font-semibold">20%</span>
+              </div>
+              <div class="h-px bg-slate-800"></div>
+              
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">UV Rejection</span>
+                <span class="text-white font-semibold">99%</span>
+              </div>
+              <div class="h-px bg-slate-800"></div>
+              
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">IR Rejection</span>
+                <span class="text-white font-semibold">83%</span>
+              </div>
+              <div class="h-px bg-slate-800"></div>
+              
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">Heat Rejection</span>
+                <span class="text-white font-semibold">80%</span>
+              </div>
+            </div>
+
+            <a href="#quote" class="inline-block mt-6 text-sm text-red-500 hover:text-red-400 transition-colors">
+              Get Quote →
+            </a>
+          </div>
+
+          <!-- RS 15 -->
+          <div class="reveal group bg-gradient-to-br from-slate-900 to-black border border-slate-800 rounded-xl p-6 hover:border-red-600 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+            <h3 class="text-2xl font-bold text-red-500 mb-6">RS 15</h3>
+            
+            <div class="space-y-3 text-sm">
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">VLT</span>
+                <span class="text-white font-semibold">15%</span>
+              </div>
+              <div class="h-px bg-slate-800"></div>
+              
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">UV Rejection</span>
+                <span class="text-white font-semibold">99%</span>
+              </div>
+              <div class="h-px bg-slate-800"></div>
+              
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">IR Rejection</span>
+                <span class="text-white font-semibold">59%</span>
+              </div>
+              <div class="h-px bg-slate-800"></div>
+              
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">Heat Rejection</span>
+                <span class="text-white font-semibold">73%</span>
+              </div>
+            </div>
+
+            <a href="#quote" class="inline-block mt-6 text-sm text-red-500 hover:text-red-400 transition-colors">
+              Get Quote →
+            </a>
+          </div>
+
+          <!-- RS 05 -->
+          <div class="reveal group bg-gradient-to-br from-slate-900 to-black border border-slate-800 rounded-xl p-6 hover:border-red-600 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+            <h3 class="text-2xl font-bold text-red-500 mb-6">RS 05</h3>
+            
+            <div class="space-y-3 text-sm">
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">VLT</span>
+                <span class="text-white font-semibold">5%</span>
+              </div>
+              <div class="h-px bg-slate-800"></div>
+              
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">UV Rejection</span>
+                <span class="text-white font-semibold">99%</span>
+              </div>
+              <div class="h-px bg-slate-800"></div>
+              
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">IR Rejection</span>
+                <span class="text-white font-semibold">73%</span>
+              </div>
+              <div class="h-px bg-slate-800"></div>
+              
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">Heat Rejection</span>
+                <span class="text-white font-semibold">84%</span>
+              </div>
+            </div>
+
+            <a href="#quote" class="inline-block mt-6 text-sm text-red-500 hover:text-red-400 transition-colors">
+              Get Quote →
+            </a>
+          </div>
+
+          <!-- HR 70 -->
+          <div class="reveal group bg-gradient-to-br from-slate-900 to-black border border-slate-800 rounded-xl p-6 hover:border-red-600 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+            <h3 class="text-2xl font-bold text-red-500 mb-6">HR 70</h3>
+            
+            <div class="space-y-3 text-sm">
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">VLT</span>
+                <span class="text-white font-semibold">70%</span>
+              </div>
+              <div class="h-px bg-slate-800"></div>
+              
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">UV Rejection</span>
+                <span class="text-white font-semibold">99%</span>
+              </div>
+              <div class="h-px bg-slate-800"></div>
+              
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">IR Rejection</span>
+                <span class="text-white font-semibold">90%</span>
+              </div>
+              <div class="h-px bg-slate-800"></div>
+              
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">Heat Rejection</span>
+                <span class="text-white font-semibold">56%</span>
+              </div>
+            </div>
+
+            <a href="#quote" class="inline-block mt-6 text-sm text-red-500 hover:text-red-400 transition-colors">
+              Get Quote →
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Gradient Divider -->
+    <div class="h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
+
+    <!-- Call to Action -->
+    <section id="quote" class="py-20 bg-gradient-to-r from-red-600 to-red-700 text-center">
+      <h2 class="text-3xl font-bold text-white">
+        Get a Pro Series Quote Today
+      </h2>
+      <p class="mt-2 text-red-100">
+        Professional installation. Premium performance.
+      </p>
+
+      <a href="contact.html"
+         class="inline-block mt-6 bg-black px-10 py-4 rounded-full font-semibold hover:bg-slate-900 hover:scale-105 active:scale-95 hover:shadow-[0_0_30px_rgba(0,0,0,0.8)] transition-all duration-200">
+        Request a Quote
+      </a>
+    </section>
+
+    <!-- Disclaimer -->
+    <section class="py-10 bg-black text-center text-slate-500 text-xs">
+      All performance values are averages based on routine quality control data.
+      Actual values may vary by ±5%.
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-black border-t border-slate-800 py-12">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        
+        <!-- Contact Info -->
+        <div>
+          <h3 class="text-white font-semibold mb-4">Contact Us</h3>
+          <p class="text-slate-400 text-sm mb-2">
+            Phone: <a href="tel:+918149111110" class="text-red-500 hover:underline">+91 81491 11110</a>
+          </p>
+          <p class="text-slate-400 text-sm">
+            Professional window film & PPF solutions
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-white font-semibold mb-4">Quick Links</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="text-slate-400 hover:text-red-500 transition-colors">Home</a></li>
+            <li><a href="products-pro-series.html" class="text-slate-400 hover:text-red-500 transition-colors">Products</a></li>
+            <li><a href="about.html" class="text-slate-400 hover:text-red-500 transition-colors">About</a></li>
+            <li><a href="contact.html" class="text-slate-400 hover:text-red-500 transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Products -->
+        <div>
+          <h3 class="text-white font-semibold mb-4">Our Products</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="products-pro-series.html" class="text-slate-400 hover:text-red-500 transition-colors">Pro Series</a></li>
+            <li><a href="products-global-series.html" class="text-slate-400 hover:text-red-500 transition-colors">Global Series</a></li>
+            <li><a href="products-classic-series.html" class="text-slate-400 hover:text-red-500 transition-colors">Classic Series</a></li>
+            <li><a href="products-uv-kool.html" class="text-slate-400 hover:text-red-500 transition-colors">UV Kool</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="border-t border-slate-800 pt-8 text-center text-slate-400 text-sm">
+        <p>&copy; 2025 RS Accessories. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
