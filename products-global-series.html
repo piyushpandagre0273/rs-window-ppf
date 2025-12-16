@@ -9,7 +9,7 @@
 <body class="text-white bg-black">
 
   <!-- Navigation Bar -->
-  <header id="navbar" class="bg-black/80 backdrop-blur border-b border-slate-800 fixed w-full z-50 transition-shadow duration-300">
+  <header id="navbar" class="bg-black/70 backdrop-blur-md border-b border-white/10 fixed w-full z-50 transition-all duration-300">
     <nav class="max-w-7xl mx-auto px-6">
       <div class="flex items-center justify-between h-16">
 
@@ -32,7 +32,7 @@
             </button>
 
             <!-- Dropdown -->
-            <div id="productsMenu" class="absolute left-0 top-8 hidden bg-black border border-slate-700 rounded-lg shadow-lg w-56 py-2 opacity-0 translate-y-2 transition-all duration-200">
+            <div id="productsMenu" class="absolute left-0 top-8 hidden bg-black/95 backdrop-blur-sm border border-slate-700 rounded-lg shadow-2xl w-56 py-2 opacity-0 scale-95 translate-y-2 transition-all duration-200 ease-out">
 
               <!-- Window Film -->
               <div class="relative" id="windowFilmItem">
@@ -42,7 +42,7 @@
                 </div>
 
                 <!-- Sub Dropdown -->
-                <div id="windowFilmMenu" class="absolute left-full top-0 hidden bg-black border border-slate-700 rounded-lg w-56 py-2 opacity-0 translate-x-2 transition-all duration-200">
+                <div id="windowFilmMenu" class="absolute left-full top-0 hidden bg-black/95 backdrop-blur-sm border border-slate-700 rounded-lg w-56 py-2 opacity-0 scale-95 translate-x-2 transition-all duration-200 ease-out">
                   <a href="products-pro-series.html" class="block px-4 py-3 hover:bg-slate-800 transition-colors">Pro Series</a>
 
                   <!-- Static Series -->
@@ -52,7 +52,7 @@
                       <span>›</span>
                     </div>
 
-                    <div id="staticSeriesMenu" class="absolute left-full top-0 hidden bg-black border border-slate-700 rounded-lg w-56 py-2 opacity-0 translate-x-2 transition-all duration-200">
+                    <div id="staticSeriesMenu" class="absolute left-full top-0 hidden bg-black/95 backdrop-blur-sm border border-slate-700 rounded-lg w-56 py-2 opacity-0 scale-95 translate-x-2 transition-all duration-200 ease-out">
                       <a href="products-global-series.html" class="block px-4 py-3 hover:bg-slate-800 transition-colors">Global Series</a>
                       <a href="products-classic-series.html" class="block px-4 py-3 hover:bg-slate-800 transition-colors">Classic Series</a>
                       <a href="products-uv-kool.html" class="block px-4 py-3 hover:bg-slate-800 transition-colors">UV Kool</a>
@@ -130,6 +130,19 @@
           <a href="tel:+918149111110" class="border border-slate-600 px-8 py-3 rounded-full hover:bg-slate-800 hover:scale-105 active:scale-95 transition-all duration-200">
             Call Now
           </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner Image -->
+    <section class="py-12 bg-gradient-to-b from-black to-slate-950">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="reveal overflow-hidden rounded-2xl border-4 border-amber-400/30 shadow-2xl">
+          <img 
+            src="assets/images/Global/packaging 1.jpg" 
+            alt="RS Global Series - Heat Control Glazing" 
+            class="w-full h-auto object-cover"
+          >
         </div>
       </div>
     </section>
@@ -212,6 +225,53 @@
     <!-- Gradient Divider -->
     <div class="h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
 
+    <!-- Product Showcase -->
+    <section class="py-16 bg-gradient-to-b from-slate-950 to-black">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          
+          <!-- Image Side -->
+          <div class="reveal order-2 md:order-1">
+            <img 
+              src="assets/images/Global/rs mockup 11.png" 
+              alt="RS Global Series Product Packaging" 
+              class="w-full h-auto rounded-2xl shadow-2xl border-4 border-amber-400/30"
+            >
+          </div>
+
+          <!-- Content Side -->
+          <div class="reveal order-1 md:order-2">
+            <h2 class="text-3xl font-bold text-white mb-6">
+              Carbon-Infused <span class="text-amber-400">Technology</span>
+            </h2>
+            <p class="text-slate-400 mb-6">
+              Global Series combines affordability with advanced heat control performance. 
+              The carbon-infused construction blocks heat, reduces glare, and protects 
+              your vehicle's interior—all while maintaining complete signal clarity.
+            </p>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <span class="text-amber-400 text-xl">✓</span>
+                <span class="text-slate-300">Signal-enabling technology for GPS & mobile devices</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-amber-400 text-xl">✓</span>
+                <span class="text-slate-300">36-month warranty for long-term peace of mind</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-amber-400 text-xl">✓</span>
+                <span class="text-slate-300">Professional-grade protection at an accessible price</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Gradient Divider -->
+    <div class="h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
+
     <!-- Global Series Variants -->
     <section class="py-20 bg-slate-950">
       <div class="max-w-7xl mx-auto px-6">
@@ -222,7 +282,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
           <!-- Global Front C -->
-          <div class="reveal group bg-gradient-to-br from-slate-900 to-black border border-slate-800 rounded-xl p-6 hover:border-amber-400 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+          <div class="reveal group bg-gradient-to-br from-slate-900 to-black border border-slate-800 rounded-xl p-10 hover:border-amber-400 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
             <h3 class="text-2xl font-bold text-amber-400 mb-6">Global Front C</h3>
             
             <div class="space-y-3 text-sm">
@@ -256,7 +316,7 @@
           </div>
 
           <!-- Global 70 (Best Value) -->
-          <div class="reveal group bg-gradient-to-br from-slate-900 to-black border border-amber-400 rounded-xl p-6 hover:-translate-y-2 hover:shadow-xl hover:shadow-amber-400/20 transition-all duration-300 relative">
+          <div class="reveal group bg-gradient-to-br from-slate-900 to-black border border-amber-400 rounded-xl p-10 hover:-translate-y-2 hover:shadow-xl hover:shadow-amber-400/20 transition-all duration-300 relative">
             <div class="absolute -top-3 left-6 bg-amber-400 text-black text-xs font-bold px-3 py-1 rounded-full">BEST VALUE</div>
             <h3 class="text-2xl font-bold text-amber-400 mb-6">Global 70</h3>
             
@@ -291,7 +351,7 @@
           </div>
 
           <!-- Global 50 -->
-          <div class="reveal group bg-gradient-to-br from-slate-900 to-black border border-slate-800 rounded-xl p-6 hover:border-amber-400 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+          <div class="reveal group bg-gradient-to-br from-slate-900 to-black border border-slate-800 rounded-xl p-10 hover:border-amber-400 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
             <h3 class="text-2xl font-bold text-amber-400 mb-6">Global 50</h3>
             
             <div class="space-y-3 text-sm">
@@ -365,8 +425,13 @@
   <!-- Footer -->
   <footer class="bg-black border-t border-slate-800 py-12">
     <div class="max-w-7xl mx-auto px-6">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
         
+        <!-- Logo -->
+        <div class="flex items-center justify-center md:justify-start">
+          <img src="assets/images/RS Film Logo 2.png" alt="RS Accessories" class="w-32 md:w-40 lg:w-48 h-auto object-contain opacity-90 hover:opacity-100 transition-opacity duration-300">
+        </div>
+
         <!-- Contact Info -->
         <div>
           <h3 class="text-white font-semibold mb-4">Contact Us</h3>
@@ -383,7 +448,6 @@
           <h3 class="text-white font-semibold mb-4">Quick Links</h3>
           <ul class="space-y-2 text-sm">
             <li><a href="index.html" class="text-slate-400 hover:text-red-500 transition-colors">Home</a></li>
-            <li><a href="products-pro-series.html" class="text-slate-400 hover:text-red-500 transition-colors">Products</a></li>
             <li><a href="about.html" class="text-slate-400 hover:text-red-500 transition-colors">About</a></li>
             <li><a href="contact.html" class="text-slate-400 hover:text-red-500 transition-colors">Contact</a></li>
           </ul>

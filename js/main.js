@@ -1,11 +1,13 @@
-// Navbar Scroll Shadow Effect
+// Premium Navbar Scroll Effect
 const navbar = document.getElementById("navbar");
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 10) {
-    navbar.classList.add("shadow-lg");
+  if (window.scrollY > 20) {
+    navbar.classList.add("bg-black/90", "shadow-2xl");
+    navbar.classList.remove("bg-black/70");
   } else {
-    navbar.classList.remove("shadow-lg");
+    navbar.classList.remove("bg-black/90", "shadow-2xl");
+    navbar.classList.add("bg-black/70");
   }
 });
 
@@ -17,33 +19,37 @@ const windowFilmMenu = document.getElementById("windowFilmMenu");
 const staticSeriesItem = document.getElementById("staticSeriesItem");
 const staticSeriesMenu = document.getElementById("staticSeriesMenu");
 
-// Show/hide products dropdown on click with animation
+// Show/hide products dropdown on click with premium animation
 productsBtn.addEventListener("click", (e) => {
   e.stopPropagation();
   if (productsMenu.classList.contains("hidden")) {
     productsMenu.classList.remove("hidden");
     setTimeout(() => {
-      productsMenu.classList.remove("opacity-0", "translate-y-2");
+      productsMenu.classList.remove("opacity-0", "scale-95", "translate-y-2");
+      productsMenu.classList.add("opacity-100", "scale-100", "translate-y-0");
     }, 10);
   } else {
-    productsMenu.classList.add("opacity-0", "translate-y-2");
+    productsMenu.classList.add("opacity-0", "scale-95", "translate-y-2");
+    productsMenu.classList.remove("opacity-100", "scale-100", "translate-y-0");
     setTimeout(() => {
       productsMenu.classList.add("hidden");
     }, 200);
   }
 });
 
-// Show window film submenu on hover with animation
+// Show window film submenu on hover with premium animation
 windowFilmItem.addEventListener("mouseenter", () => {
   windowFilmMenu.classList.remove("hidden");
   setTimeout(() => {
-    windowFilmMenu.classList.remove("opacity-0", "translate-x-2");
+    windowFilmMenu.classList.remove("opacity-0", "scale-95", "translate-x-2");
+    windowFilmMenu.classList.add("opacity-100", "scale-100", "translate-x-0");
   }, 10);
 });
 
 windowFilmItem.addEventListener("mouseleave", (e) => {
   if (!windowFilmMenu.contains(e.relatedTarget)) {
-    windowFilmMenu.classList.add("opacity-0", "translate-x-2");
+    windowFilmMenu.classList.add("opacity-0", "scale-95", "translate-x-2");
+    windowFilmMenu.classList.remove("opacity-100", "scale-100", "translate-x-0");
     setTimeout(() => {
       windowFilmMenu.classList.add("hidden");
     }, 200);
@@ -51,23 +57,26 @@ windowFilmItem.addEventListener("mouseleave", (e) => {
 });
 
 windowFilmMenu.addEventListener("mouseleave", () => {
-  windowFilmMenu.classList.add("opacity-0", "translate-x-2");
+  windowFilmMenu.classList.add("opacity-0", "scale-95", "translate-x-2");
+  windowFilmMenu.classList.remove("opacity-100", "scale-100", "translate-x-0");
   setTimeout(() => {
     windowFilmMenu.classList.add("hidden");
   }, 200);
 });
 
-// Show static series submenu on hover with animation
+// Show static series submenu on hover with premium animation
 staticSeriesItem.addEventListener("mouseenter", () => {
   staticSeriesMenu.classList.remove("hidden");
   setTimeout(() => {
-    staticSeriesMenu.classList.remove("opacity-0", "translate-x-2");
+    staticSeriesMenu.classList.remove("opacity-0", "scale-95", "translate-x-2");
+    staticSeriesMenu.classList.add("opacity-100", "scale-100", "translate-x-0");
   }, 10);
 });
 
 staticSeriesItem.addEventListener("mouseleave", (e) => {
   if (!staticSeriesMenu.contains(e.relatedTarget)) {
-    staticSeriesMenu.classList.add("opacity-0", "translate-x-2");
+    staticSeriesMenu.classList.add("opacity-0", "scale-95", "translate-x-2");
+    staticSeriesMenu.classList.remove("opacity-100", "scale-100", "translate-x-0");
     setTimeout(() => {
       staticSeriesMenu.classList.add("hidden");
     }, 200);
@@ -75,7 +84,8 @@ staticSeriesItem.addEventListener("mouseleave", (e) => {
 });
 
 staticSeriesMenu.addEventListener("mouseleave", () => {
-  staticSeriesMenu.classList.add("opacity-0", "translate-x-2");
+  staticSeriesMenu.classList.add("opacity-0", "scale-95", "translate-x-2");
+  staticSeriesMenu.classList.remove("opacity-100", "scale-100", "translate-x-0");
   setTimeout(() => {
     staticSeriesMenu.classList.add("hidden");
   }, 200);
@@ -112,10 +122,11 @@ document.addEventListener("click", (e) => {
     mobileMenu.classList.add("hidden");
   }
   
-  // Close desktop products menu with animation
+  // Close desktop products menu with premium animation
   if (!productsBtn.contains(e.target) && !productsMenu.contains(e.target)) {
     if (!productsMenu.classList.contains("hidden")) {
-      productsMenu.classList.add("opacity-0", "translate-y-2");
+      productsMenu.classList.add("opacity-0", "scale-95", "translate-y-2");
+      productsMenu.classList.remove("opacity-100", "scale-100", "translate-y-0");
       setTimeout(() => {
         productsMenu.classList.add("hidden");
       }, 200);
