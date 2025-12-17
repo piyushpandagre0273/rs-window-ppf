@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warranty - Product Coverage & Terms | RS</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="text-white bg-black">
+
+  <!-- Navigation Bar -->
+  <header id="navbar" class="bg-black/70 backdrop-blur-md border-b border-white/10 fixed w-full z-50 transition-all duration-300">
+    <nav class="max-w-7xl mx-auto px-6">
+      <div class="flex items-center justify-between h-16">
+
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center h-full py-2">
+          <img src="assets/images/RS Film Logo.png" alt="RS" class="max-h-full w-auto object-contain" style="max-height: 40px;">
+        </a>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex items-center space-x-8 text-sm font-medium">
+          <li><a href="index.html" class="hover:text-red-500 transition-colors">Home</a></li>
+
+          <!-- Products Dropdown -->
+          <li class="relative" id="productsDropdown">
+            <button id="productsBtn" class="flex items-center gap-1 hover:text-red-500 transition-colors">
+              Products
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+
+            <!-- Dropdown -->
+            <div id="productsMenu" class="absolute left-0 top-8 hidden bg-black/95 backdrop-blur-sm border border-slate-700 rounded-lg shadow-2xl w-56 py-2 opacity-0 scale-95 translate-y-2 transition-all duration-200 ease-out">
+
+              <!-- Window Film -->
+              <div class="relative" id="windowFilmItem">
+                <div class="flex justify-between items-center px-4 py-3 hover:bg-slate-800 cursor-pointer transition-colors">
+                  <span>Window Film</span>
+                  <span>›</span>
+                </div>
+
+                <!-- Sub Dropdown -->
+                <div id="windowFilmMenu" class="absolute left-full top-0 hidden bg-black/95 backdrop-blur-sm border border-slate-700 rounded-lg w-56 py-2 opacity-0 scale-95 translate-x-2 transition-all duration-200 ease-out">
+                  <a href="products-pro-series.html" class="block px-4 py-3 hover:bg-slate-800 transition-colors">Pro Series</a>
+
+                  <!-- Static Series -->
+                  <div class="relative" id="staticSeriesItem">
+                    <div class="flex justify-between items-center px-4 py-3 hover:bg-slate-800 cursor-pointer transition-colors">
+                      <span>Static Series</span>
+                      <span>›</span>
+                    </div>
+
+                    <div id="staticSeriesMenu" class="absolute left-full top-0 hidden bg-black/95 backdrop-blur-sm border border-slate-700 rounded-lg w-56 py-2 opacity-0 scale-95 translate-x-2 transition-all duration-200 ease-out">
+                      <a href="products-global-series.html" class="block px-4 py-3 hover:bg-slate-800 transition-colors">Global Series</a>
+                      <a href="products-classic-series.html" class="block px-4 py-3 hover:bg-slate-800 transition-colors">Classic Series</a>
+                      <a href="products-uv-kool.html" class="block px-4 py-3 hover:bg-slate-800 transition-colors">UV Kool</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PPF -->
+              <a href="ppf.html" class="block px-4 py-3 hover:bg-slate-800 transition-colors">PPF</a>
+            </div>
+          </li>
+
+          <li><a href="about.html" class="hover:text-red-500 transition-colors">About</a></li>
+          <li><a href="warranty.html" class="hover:text-red-500 transition-colors">Warranty</a></li>
+          <li><a href="contact.html" class="hover:text-red-500 transition-colors">Contact</a></li>
+        </ul>
+
+        <!-- CTA Button -->
+        <a href="index.html#quote" class="hidden md:inline-block bg-red-600 px-5 py-2 rounded-full text-sm font-semibold hover:bg-red-700 transition-colors">
+          Get Quote
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button id="menuBtn" class="md:hidden text-2xl">
+          ☰
+        </button>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-black border-t border-slate-800 fixed w-full z-40 mt-16">
+    <a href="index.html" class="block px-6 py-4 border-b border-slate-800 hover:bg-slate-800 transition-colors">Home</a>
+    
+    <!-- Mobile Products Accordion -->
+    <div>
+      <button id="mobileProductsBtn" class="w-full text-left px-6 py-4 border-b border-slate-800 hover:bg-slate-800 transition-colors flex justify-between items-center">
+        <span>Products</span>
+        <span id="productsArrow">▾</span>
+      </button>
+      <div id="mobileProductsMenu" class="hidden bg-slate-900">
+        <a href="products-pro-series.html" class="block px-8 py-3 border-b border-slate-800 hover:bg-slate-800 transition-colors">Window Film - Pro Series</a>
+        <a href="products-global-series.html" class="block px-8 py-3 border-b border-slate-800 hover:bg-slate-800 transition-colors">Static - Global Series</a>
+        <a href="products-classic-series.html" class="block px-8 py-3 border-b border-slate-800 hover:bg-slate-800 transition-colors">Static - Classic Series</a>
+        <a href="products-uv-kool.html" class="block px-8 py-3 border-b border-slate-800 hover:bg-slate-800 transition-colors">Static - UV Kool</a>
+        <a href="ppf.html" class="block px-8 py-3 border-b border-slate-800 hover:bg-slate-800 transition-colors">PPF</a>
+      </div>
+    </div>
+    
+    <a href="about.html" class="block px-6 py-4 border-b border-slate-800 hover:bg-slate-800 transition-colors">About</a>
+    <a href="warranty.html" class="block px-6 py-4 border-b border-slate-800 hover:bg-slate-800 transition-colors">Warranty</a>
+    <a href="contact.html" class="block px-6 py-4 border-b border-slate-800 hover:bg-slate-800 transition-colors">Contact</a>
+    <a href="index.html#quote" class="block px-6 py-4 bg-red-600 hover:bg-red-700 transition-colors font-semibold">Get Quote</a>
+  </div>
+
+  <!-- Main Content -->
+  <main class="pt-16">
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-black via-slate-900 to-black py-28 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-white animate-fadeInUp">
+          Product <span class="text-red-600">Warranty</span>
+        </h1>
+
+        <p class="mt-4 text-slate-400 max-w-2xl mx-auto text-lg animate-fadeInUp-delay-1">
+          Our products are backed by warranty to ensure long-term performance,
+          reliability, and customer peace of mind.
+        </p>
+      </div>
+    </section>
+
+    <!-- Gradient Divider -->
+    <div class="h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
+
+    <!-- Warranty Overview -->
+    <section class="py-20 bg-black">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-white mb-6">Warranty Overview</h2>
+
+        <p class="text-slate-400 leading-relaxed">
+          RS provides warranty coverage on selected products against manufacturing defects 
+          and performance issues, subject to proper usage and maintenance. Our warranty reflects 
+          our commitment to quality and professional installation standards. Every product is 
+          tested to ensure it meets our rigorous quality standards before reaching you.
+        </p>
+      </div>
+    </section>
+
+    <!-- Gradient Divider -->
+    <div class="h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
+
+    <!-- What Is Covered -->
+    <section class="py-20 bg-slate-950">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-white mb-10">What Is Covered</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="flex items-start gap-4">
+            <div class="text-red-600 text-2xl mt-1">✓</div>
+            <div>
+              <h3 class="text-white font-semibold mb-2">Air Bubbles</h3>
+              <p class="text-slate-400 text-sm">Caused by adhesive failure under normal conditions</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="text-red-600 text-2xl mt-1">✓</div>
+            <div>
+              <h3 class="text-white font-semibold mb-2">Peeling or Cracking</h3>
+              <p class="text-slate-400 text-sm">Under normal usage and weather conditions</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="text-red-600 text-2xl mt-1">✓</div>
+            <div>
+              <h3 class="text-white font-semibold mb-2">Discoloration</h3>
+              <p class="text-slate-400 text-sm">Fading or color changes beyond product specification</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="text-red-600 text-2xl mt-1">✓</div>
+            <div>
+              <h3 class="text-white font-semibold mb-2">Performance Degradation</h3>
+              <p class="text-slate-400 text-sm">UV & IR rejection performance drop within warranty limits</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gradient Divider -->
+    <div class="h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
+
+    <!-- What Is Not Covered -->
+    <section class="py-20 bg-black">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-white mb-10">What Is Not Covered</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="flex items-start gap-4">
+            <div class="text-red-500 text-2xl mt-1">✕</div>
+            <div>
+              <h3 class="text-white font-semibold mb-2">Accident Damage</h3>
+              <p class="text-slate-400 text-sm">Damage from accidents, collisions, or external impact</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="text-red-500 text-2xl mt-1">✕</div>
+            <div>
+              <h3 class="text-white font-semibold mb-2">Improper Care</h3>
+              <p class="text-slate-400 text-sm">Improper cleaning or use of abrasive chemicals</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="text-red-500 text-2xl mt-1">✕</div>
+            <div>
+              <h3 class="text-white font-semibold mb-2">Unauthorized Work</h3>
+              <p class="text-slate-400 text-sm">Unauthorized removal or reinstallation by non-professionals</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="text-red-500 text-2xl mt-1">✕</div>
+            <div>
+              <h3 class="text-white font-semibold mb-2">Natural Wear</h3>
+              <p class="text-slate-400 text-sm">Normal wear beyond the warranty period</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gradient Divider -->
+    <div class="h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
+
+    <!-- Warranty Duration -->
+    <section class="py-20 bg-slate-950">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-white mb-12">Warranty Duration</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+          <div class="bg-black border border-slate-800 rounded-xl p-8 hover:border-red-600 hover:-translate-y-1 transition-all duration-300">
+            <h3 class="text-xl font-bold text-white mb-3">Pro Series</h3>
+            <p class="text-slate-400 mb-4">Premium protection for discerning customers</p>
+            <p class="text-red-500 font-semibold text-lg">Up to 36 Months</p>
+          </div>
+
+          <div class="bg-black border border-slate-800 rounded-xl p-8 hover:border-red-600 hover:-translate-y-1 transition-all duration-300">
+            <h3 class="text-xl font-bold text-white mb-3">Global Series</h3>
+            <p class="text-slate-400 mb-4">Reliable heat control at great value</p>
+            <p class="text-red-500 font-semibold text-lg">36 Months</p>
+          </div>
+
+          <div class="bg-black border border-slate-800 rounded-xl p-8 hover:border-red-600 hover:-translate-y-1 transition-all duration-300">
+            <h3 class="text-xl font-bold text-white mb-3">Classic Series</h3>
+            <p class="text-slate-400 mb-4">Proven performance in static film</p>
+            <p class="text-red-500 font-semibold text-lg">36 Months</p>
+          </div>
+
+          <div class="bg-black border border-slate-800 rounded-xl p-8 hover:border-red-600 hover:-translate-y-1 transition-all duration-300">
+            <h3 class="text-xl font-bold text-white mb-3">UV Kool</h3>
+            <p class="text-slate-400 mb-4">Complete UV protection solution</p>
+            <p class="text-red-500 font-semibold text-lg">36 Months</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Gradient Divider -->
+    <div class="h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
+
+    <!-- Further Details / Accordion -->
+    <section class="py-20 bg-black">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-white mb-12">Further Warranty Details</h2>
+
+        <details class="group border border-slate-800 rounded-xl p-6 mb-6 hover:border-red-600/50 transition-all duration-300 cursor-pointer">
+          <summary class="flex justify-between items-center text-white font-semibold text-lg">
+            <span>Terms & Conditions</span>
+            <span class="text-red-600 group-open:rotate-180 transition-transform duration-300 text-xl">⌄</span>
+          </summary>
+          <div class="mt-6 text-slate-400 space-y-3 border-t border-slate-800 pt-6">
+            <p>
+              • Warranty is valid only when installation is performed by authorized RS professionals
+            </p>
+            <p>
+              • Product must be maintained according to our care guidelines
+            </p>
+            <p>
+              • Warranty does not cover negligence or misuse
+            </p>
+            <p>
+              • Original invoice must be provided for warranty claims
+            </p>
+            <p>
+              • Warranty is non-transferable and applies only to the original owner
+            </p>
+          </div>
+        </details>
+
+        <details class="group border border-slate-800 rounded-xl p-6 mb-6 hover:border-red-600/50 transition-all duration-300 cursor-pointer">
+          <summary class="flex justify-between items-center text-white font-semibold text-lg">
+            <span>Warranty Claim Process</span>
+            <span class="text-red-600 group-open:rotate-180 transition-transform duration-300 text-xl">⌄</span>
+          </summary>
+          <div class="mt-6 text-slate-400 space-y-4 border-t border-slate-800 pt-6">
+            <div>
+              <p class="font-semibold text-white mb-2">Step 1: Contact Us</p>
+              <p>Reach out to our support team with your invoice and product details</p>
+            </div>
+            <div>
+              <p class="font-semibold text-white mb-2">Step 2: Inspection</p>
+              <p>Our team will assess the issue and verify warranty coverage</p>
+            </div>
+            <div>
+              <p class="font-semibold text-white mb-2">Step 3: Resolution</p>
+              <p>Upon approval, we'll arrange replacement or repair as per warranty terms</p>
+            </div>
+          </div>
+        </details>
+
+        <details class="group border border-slate-800 rounded-xl p-6 mb-6 hover:border-red-600/50 transition-all duration-300 cursor-pointer">
+          <summary class="flex justify-between items-center text-white font-semibold text-lg">
+            <span>Product Care & Maintenance</span>
+            <span class="text-red-600 group-open:rotate-180 transition-transform duration-300 text-xl">⌄</span>
+          </summary>
+          <div class="mt-6 text-slate-400 space-y-3 border-t border-slate-800 pt-6">
+            <p>
+              • Wait 48 hours after installation before cleaning
+            </p>
+            <p>
+              • Use only soft microfiber cloths for cleaning
+            </p>
+            <p>
+              • Avoid harsh chemicals—use mild soap and water only
+            </p>
+            <p>
+              • Never use squeegees or sharp objects on treated windows
+            </p>
+            <p>
+              • Regular maintenance extends product lifespan and maintains warranty validity
+            </p>
+          </div>
+        </details>
+
+        <details class="group border border-slate-800 rounded-xl p-6 hover:border-red-600/50 transition-all duration-300 cursor-pointer">
+          <summary class="flex justify-between items-center text-white font-semibold text-lg">
+            <span>Warranty Exclusions & Limitations</span>
+            <span class="text-red-600 group-open:rotate-180 transition-transform duration-300 text-xl">⌄</span>
+          </summary>
+          <div class="mt-6 text-slate-400 space-y-3 border-t border-slate-800 pt-6">
+            <p>
+              • Labor costs for removal or reinstallation are not covered
+            </p>
+            <p>
+              • Damage from vehicle accidents or natural disasters is excluded
+            </p>
+            <p>
+              • Warranty is limited to product replacement or repair, not refunds
+            </p>
+            <p>
+              • RS is not liable for indirect or consequential damages
+            </p>
+            <p>
+              • All warranty claims must be filed within 30 days of issue discovery
+            </p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- Gradient Divider -->
+    <div class="h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-red-600 to-red-700 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+        Need Warranty Assistance?
+      </h2>
+
+      <p class="text-red-100 max-w-xl mx-auto mb-8">
+        Our support team is here to help with any warranty-related inquiries
+      </p>
+
+      <a href="contact.html"
+         class="inline-block bg-black text-white px-10 py-4 rounded-full font-semibold hover:bg-slate-900 hover:scale-105 active:scale-95 hover:shadow-[0_0_30px_rgba(0,0,0,0.8)] transition-all duration-200">
+        Contact Us
+      </a>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-black border-t border-slate-800 py-12">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        
+        <!-- Logo -->
+        <div class="flex items-center justify-center md:justify-start">
+          <img src="assets/images/RS Film Logo 2.png" alt="RS" class="w-32 md:w-40 lg:w-48 h-auto object-contain opacity-90 hover:opacity-100 transition-opacity duration-300">
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h3 class="text-white font-semibold mb-4">Contact Us</h3>
+          <p class="text-slate-400 text-sm mb-2">
+            Phone: <a href="tel:+918149111110" class="text-red-500 hover:underline">+91 81491 11110</a>
+          </p>
+          <p class="text-slate-400 text-sm">
+            Professional window film & PPF solutions
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-white font-semibold mb-4">Quick Links</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="text-slate-400 hover:text-red-500 transition-colors">Home</a></li>
+            <li><a href="about.html" class="text-slate-400 hover:text-red-500 transition-colors">About</a></li>
+            <li><a href="warranty.html" class="text-slate-400 hover:text-red-500 transition-colors">Warranty</a></li>
+            <li><a href="contact.html" class="text-slate-400 hover:text-red-500 transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Products -->
+        <div>
+          <h3 class="text-white font-semibold mb-4">Our Products</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="products-pro-series.html" class="text-slate-400 hover:text-red-500 transition-colors">Pro Series</a></li>
+            <li><a href="products-global-series.html" class="text-slate-400 hover:text-red-500 transition-colors">Global Series</a></li>
+            <li><a href="products-classic-series.html" class="text-slate-400 hover:text-red-500 transition-colors">Classic Series</a></li>
+            <li><a href="products-uv-kool.html" class="text-slate-400 hover:text-red-500 transition-colors">UV Kool</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="border-t border-slate-800 pt-8 text-center text-slate-400 text-sm">
+        <p>&copy; 2025 RS. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
